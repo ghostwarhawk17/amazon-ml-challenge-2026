@@ -1,0 +1,6 @@
+* text=auto
+# cmd.exe needs CRLF line endings in batch files (labels and goto can break with LF only)
+*.bat text eol=crlf
+*.py text eol=lf
+*.md text eol=lf
+*.tsv -text

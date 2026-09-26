@@ -1,0 +1,29 @@
+# Official data: copy dataset/train and dataset/test here by hand (the files are too big for GitHub)
+dataset/*
+!dataset/README.md
+
+# Generated outputs and packages
+output/
+*.zip
+
+# Python
+**/__pycache__/
+*.pyc
+**/.venv/
+
+# Pipeline artifacts stay on the machine that made them, except the small reports used for analysis
+code/business_entity_resolution/debug/
+code/business_entity_resolution/models/*
+!code/business_entity_resolution/models/error_report.json
+!code/business_entity_resolution/models/error_examples.tsv
+!code/business_entity_resolution/models/meta.json
+!code/business_entity_resolution/models/meta_stage1.json
+!code/business_entity_resolution/models/retrieval_report.json
+!code/business_entity_resolution/models/feature_importance_stage1.csv
+!code/business_entity_resolution/models/feature_importance_stage2.csv
+!code/business_entity_resolution/models/biencoder/
+code/business_entity_resolution/models/biencoder/*
+!code/business_entity_resolution/models/biencoder/train_meta.json
+!code/business_entity_resolution/models/extra/
+code/business_entity_resolution/models/extra/*
+!code/business_entity_resolution/models/extra/*_meta.json
